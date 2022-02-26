@@ -1,0 +1,16 @@
+#!/usr/bin/python3.6
+
+import time
+
+print("Running...")
+
+N = 60 # iterations
+t = 1  # seconds
+list = []
+for i in range(N+1):
+
+    list.append(i*i)
+    time.sleep(t)
+
+    if i == N:
+       print("Done")
