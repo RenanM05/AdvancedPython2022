@@ -16,10 +16,3 @@ def qr_decomposition(A):
         Q = np.dot(Q, H.T)
 
     return Q, R
-
-# Example usage:
-A = np.random.rand(5, 5)
-Q, R = qr_decomposition(A)
-
-print("Q:", Q)
-print("R:", R)
