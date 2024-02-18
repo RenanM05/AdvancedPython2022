@@ -9,6 +9,7 @@ pip install MyQRPackage
 ```
 
 # Example usage :
+Create a python file 'use_myqrpackage.py' with the following code below
 ```python
 import numpy 
 from MyQRPackage.QRDecomposition import qr_decomposition
@@ -18,13 +19,15 @@ Q, R = qr_decomposition(A)
 print("Q:", Q)
 print("R:", R)
 ```
+```bash
+python3 use_myqrpackage.py
+```
 
 # Other information:
 
 The main content of MyQRPackage is represented in a tree format below:
 
 ```markdown
-
 .travis.yml
 setup.py
 MyQRPackage/
