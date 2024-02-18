@@ -48,7 +48,7 @@ twine upload --repository testpypi dist/*
 ```
 
 >> Travis CI 
-Done, and the hidden `.travi.yml` file is updated inside `MyQRPackage`
+It is a hidden file called `.travi.yml`. This file is updated inside `MyQRPackage`
 
 
 ## Testing folder 
