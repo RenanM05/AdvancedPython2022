@@ -47,6 +47,13 @@ Notice that the code was uploaded to my TestPyPI (or PyPI) with:
 twine upload --repository testpypi dist/*
 ```
 
+If you download this code from the source, I recommend you to test it using the following command:
+```bash
+$pytest
+```
+Run `pytest` in the main root folder, e.g., `python3 MyQRPackage/pytest`. 
+
+
 >> Travis CI
 It is a hidden file called `.travi.yml`. This file is updated inside `MyQRPackage`
 
@@ -61,6 +68,6 @@ I list below what it does:
 3. the Householder matrix properly reflects a vector (negating its first component).
 
 @QRdecomposition (test_qr_decomposition.py)
-1. test_qr_decomposition checks the decomposition on a 4x4 matrix.
-2. test_qr_square_matrix checks the decomposition on a square matrix of size 3x3.
-3. test_qr_non_square_matrix checks the decomposition on a non-square matrix of size 3x2.
+1. `test_qr_decomposition` checks the decomposition on a 4x4 matrix.
+2. `test_qr_square_matrix` checks the decomposition on a square matrix of size 3x3.
+3. `test_qr_non_square_matrix` checks the decomposition on a non-square matrix of size 3x2.
