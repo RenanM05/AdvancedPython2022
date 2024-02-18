@@ -3,10 +3,11 @@
 'A package for QR decomposition using Householder reflections.'
 
 # Installation
-pip install -i https://test.pypi.org/simple/ MyQRPackage
+```markdown
+Use `pip install -i https://test.pypi.org/simple/ MyQRPackage` to install MyQRPackage.
 
 # Example usage :
-"""
+```python
 import numpy 
 import MyQRPackage
 from MyQRPackage.QRDecomposition import qr_decomposition
@@ -15,7 +16,7 @@ A = numpy.random.rand(5, 5)
 Q, R = qr_decomposition(A)
 print("Q:", Q)
 print("R:", R)
-"""
+```
 
 # Other information:
 
