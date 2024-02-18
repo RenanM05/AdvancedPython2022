@@ -47,6 +47,10 @@ python setup.py sdist bdist_wheel
 twine upload --repository testpypi dist/*
 ```
 
+>> Travis CI 
+Done, and the hidden `.travi.yml` file is updated inside `MyQRPackage`
+
+
 ## Testing folder 
 This part is designed to test the robustness of the code. 
 I list below what it does: 
