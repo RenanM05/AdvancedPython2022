@@ -22,6 +22,7 @@ print("R:", R)
 # Other information:
 
 The main content of MyQRPackage is represented in a tree format below:
+
 ```markdown
 MyQRPackage/
     QRDecomposition/
@@ -36,17 +37,26 @@ MyQRPackage/
     README.md
 ```
 
+The other folders, like build, dist, MyQRPackage.egg-info is due the command 
+```bash
+python setup.py sdist bdist_wheel
+```
+!Notice that the code was uploaded to my TestPyPI (or PyPI) with:
+
+```bash
+twine upload --repository testpypi dist/*
+```
+
 ## Testing folder 
 This part is designed to test the robustness of the code. 
 I list below what it does: 
 
-@Household 
-The test check if 
+@Household (test_household.py)
 1. the Householder matrix for a unit vector is an identity matrix
 2. the Householder matrix is orthogonal,
 3. the Householder matrix properly reflects a vector (negating its first component).
 
-@QRdecomposition
+@QRdecomposition (test_qr_decomposition.py)
 1. test_qr_decomposition checks the decomposition on a 4x4 matrix.
 2. test_qr_square_matrix checks the decomposition on a square matrix of size 3x3.
 3. test_qr_non_square_matrix checks the decomposition on a non-square matrix of size 3x2.
