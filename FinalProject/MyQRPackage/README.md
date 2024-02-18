@@ -19,6 +19,7 @@ Q, R = qr_decomposition(A)
 print("Q:", Q)
 print("R:", R)
 ```
+Run
 ```bash
 python3 use_myqrpackage.py
 ```
