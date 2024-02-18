@@ -9,7 +9,7 @@ pip install MyQRPackage
 ```
 
 # Example usage :
-Create a python file 'use_myqrpackage.py' with the following code below
+Create a python file `use_myqrpackage.py` with the following code below
 ```python
 import numpy 
 from MyQRPackage.QRDecomposition import qr_decomposition
