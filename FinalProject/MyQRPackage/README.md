@@ -6,6 +6,7 @@
 pip install -i https://test.pypi.org/simple/ MyQRPackage
 
 # Example usage :
+"""
 import numpy 
 import MyQRPackage
 from MyQRPackage.QRDecomposition import qr_decomposition
@@ -14,11 +15,12 @@ A = numpy.random.rand(5, 5)
 Q, R = qr_decomposition(A)
 print("Q:", Q)
 print("R:", R)
+"""
 
 # Other information:
 
 The main content of MyQRPackage is represented in a tree format below:
-
+"""
 MyQRPackage/
     QRDecomposition/
         __init__.py
@@ -30,6 +32,7 @@ MyQRPackage/
         test_qr_decomposition.py
     setup.py
     README.md
+"""
 
 ## Testing folder 
 This part is designed to test the robustness of the code. 
