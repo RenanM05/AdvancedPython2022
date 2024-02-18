@@ -43,13 +43,12 @@ MyQRPackage/
 │   ├── test_household.py
 │   └── test_qr_decomposition.py
 │
-│── build/
 │── dist/
 │── MyQRPackage.egg-info/
 └── README.md
 ```
 
-The other folders, like: *build, dist, MyQRPackage.egg-info* is due to the command 
+The other folders, like: * dist, MyQRPackage.egg-info* is due to the command 
 ```bash
 python setup.py sdist bdist_wheel
 ```
