@@ -5,7 +5,7 @@ A package for QR decomposition using Householder reflections.
 ## Installation
 
 ```bash
-pip install -i https://test.pypi.org/simple/ MyQRPackage
+pip uninstall MyQRPackage
 ```
 
 # Example usage :
