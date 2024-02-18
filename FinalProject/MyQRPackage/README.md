@@ -1,6 +1,11 @@
-# Example usage :
-> Install:  "pip install -i https://test.pypi.org/simple/ MyQRPackage"
+# MyQRPackage 
 
+'A package for QR decomposition using Householder reflections.'
+
+# Installation
+pip install -i https://test.pypi.org/simple/ MyQRPackage
+
+# Example usage :
 import numpy 
 import MyQRPackage
 from MyQRPackage.QRDecomposition import qr_decomposition
@@ -10,7 +15,26 @@ Q, R = qr_decomposition(A)
 print("Q:", Q)
 print("R:", R)
 
-# Test folder will try the follow steps:
+# Other information:
+
+The main content of MyQRPackage is represented in a tree format below:
+
+MyQRPackage/
+    QRDecomposition/
+        __init__.py
+        household.py
+        qr_decomposition.py
+    tests/
+        __init__.py
+        test_household.py
+        test_qr_decomposition.py
+    setup.py
+    README.md
+
+## Testing folder 
+This part is designed to test the robustness of the code. 
+I list below what it does: 
+
 @Household 
 The test check if 
 1. the Householder matrix for a unit vector is an identity matrix
