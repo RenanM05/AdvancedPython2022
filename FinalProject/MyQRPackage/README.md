@@ -24,6 +24,8 @@ print("R:", R)
 The main content of MyQRPackage is represented in a tree format below:
 
 ```markdown
+
+.travis.yml
 setup.py
 MyQRPackage/
 │
@@ -37,6 +39,9 @@ MyQRPackage/
 │   ├── test_household.py
 │   └── test_qr_decomposition.py
 │
+│── build/
+│── dist/
+│── MyQRPackage.egg-info/
 └── README.md
 ```
 
