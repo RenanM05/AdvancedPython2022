@@ -53,10 +53,10 @@ The other folders, like: * dist, MyQRPackage.egg-info* is due to the command
 ```bash
 python setup.py sdist bdist_wheel
 ```
-Notice that the code was uploaded to my TestPyPI (or PyPI) with:
+Notice that the code was uploaded to my PyPI using twine:
 
 ```bash
-twine upload --repository testpypi dist/*
+twine upload dist/*
 ```
 
 If you download this code from the source, I recommend you to test it using the following command:
@@ -67,7 +67,7 @@ Run `pytest` in the main root folder, e.g., `python3 MyQRPackage/pytest`.
 
 
 >> Travis CI
-It is a hidden file called `.travi.yml`. This file is updated inside `MyQRPackage`
+It is a hidden file called `.travi.yml`. This file is at the same level as `MyQRPackage`
 
 
 ## Testing folder 
