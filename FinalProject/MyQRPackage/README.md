@@ -37,17 +37,17 @@ MyQRPackage/
     README.md
 ```
 
-The other folders, like build, dist, MyQRPackage.egg-info is due the command 
+The other folders, like: *build, dist, MyQRPackage.egg-info* is due to the command 
 ```bash
 python setup.py sdist bdist_wheel
 ```
-!Notice that the code was uploaded to my TestPyPI (or PyPI) with:
+Notice that the code was uploaded to my TestPyPI (or PyPI) with:
 
 ```bash
 twine upload --repository testpypi dist/*
 ```
 
->> Travis CI 
+>> Travis CI
 It is a hidden file called `.travi.yml`. This file is updated inside `MyQRPackage`
 
 
