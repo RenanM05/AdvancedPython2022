@@ -24,7 +24,7 @@ print("R:", R)
 The main content of MyQRPackage is represented in a tree format below:
 
 ```markdown
-
+setup.py
 MyQRPackage/
 │
 ├── QRDecomposition/
@@ -38,8 +38,6 @@ MyQRPackage/
 │   └── test_qr_decomposition.py
 │
 └── README.md
-│
-setup.py
 ```
 
 The other folders, like: *build, dist, MyQRPackage.egg-info* is due to the command 
