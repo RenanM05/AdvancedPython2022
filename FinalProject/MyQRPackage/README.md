@@ -1,5 +1,16 @@
-# test folder will try the follow steps:
+# Example usage :
+> Install:  "pip install -i https://test.pypi.org/simple/ MyQRPackage"
 
+import numpy 
+import MyQRPackage
+from MyQRPackage.QRDecomposition import qr_decomposition
+
+A = numpy.random.rand(5, 5)
+Q, R = qr_decomposition(A)
+print("Q:", Q)
+print("R:", R)
+
+# Test folder will try the follow steps:
 @Household 
 The test check if 
 1. the Householder matrix for a unit vector is an identity matrix
@@ -10,11 +21,3 @@ The test check if
 1. test_qr_decomposition checks the decomposition on a 4x4 matrix.
 2. test_qr_square_matrix checks the decomposition on a square matrix of size 3x3.
 3. test_qr_non_square_matrix checks the decomposition on a non-square matrix of size 3x2.
-
-
-# Example usage :
-A = np.random.rand(5, 5)
-Q, R = qr_decomposition(A)
-
-print("Q:", Q)
-print("R:", R)
